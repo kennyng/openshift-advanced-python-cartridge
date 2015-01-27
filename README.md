@@ -13,7 +13,7 @@ The official python cartridge uses Apache and mod_wsgi to serve your app which i
 
 To install this cartridge use the cartridge reflector when creating an app
 
-	rhc create-app myapp http://cartreflect-claytondev.rhcloud.com/reflect?github=kennyng/openshift-advanced-python-cartridge
+	rhc app create [appname] http://cartreflect-claytondev.rhcloud.com/reflect?github=kennyng/openshift-advanced-python-cartridge
 
 
 ### Usage
@@ -46,8 +46,8 @@ Any configuration for the server package will be exposed via environment variabl
 Default: <code>number of CPUs * 2 + 1</code>
 
 <code>OPENSHIFT_PYTHON_WORKER_CLASS</code> - The worker class to use.
-Default: <code>gevent</code>
 [See Documentation](http://gunicorn-docs.readthedocs.org/en/latest/design.html).
+Default: <code>gevent</code>
 
 ### Static files
 
