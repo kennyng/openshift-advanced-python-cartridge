@@ -111,11 +111,8 @@ function tidy() {
 # install the selected server
 function build_server() {
     case "$OPENSHIFT_PYTHON_SERVER" in
-        gevent)
-            pip install gevent
-            ;;
         gunicorn)
-            pip install gevent gunicorn
+            pip install gunicorn
             ;;
     esac
 
