@@ -44,7 +44,9 @@ Any configuration for the server package will be exposed via environment variabl
 
 <code>OPENSHIFT_PYTHON_WORKERS</code> - The number of workers to spawn for packages like gunicorn.
 Default: <code>number of CPUs * 2 + 1</code>
-
+<code>OPENSHIFT_PYTHON_WORKER_CLASS</code> - The worker class to use.
+[See Documentation](http://gunicorn-docs.readthedocs.org/en/latest/design.html).
+Default: <code>gevent</code>
 
 ### Static files
 
