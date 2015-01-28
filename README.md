@@ -31,8 +31,8 @@ Be aware, however, that restarting/redeploying after changing servers for the fi
 ### Supported servers
 
  - wsgiref
- - gevent
  - gunicorn
+ - gevent (for Python 2.7 version only)
 
 
 ### Configuration
@@ -47,7 +47,7 @@ Default: <code>number of CPUs * 2 + 1</code>
 
 <code>OPENSHIFT_PYTHON_WORKER_CLASS</code> - The worker class to use.
 [See Documentation](http://gunicorn-docs.readthedocs.org/en/latest/design.html).
-Default: <code>gevent</code>
+Default: <code>sync</code>
 
 ### Static files
 
